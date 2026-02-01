@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judy Wang | AI & Finance Professional Portfolio</title>
+    <!-- 引入图标和字体 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 核心设计系统 */
+        :root {
+            --navy: #002D5E;      /* 深海军蓝：代表金融严谨性 */
+            --tech-blue: #0078D4; /* 科技蓝：代表 AI 与数据 */
+            --bg-light: #F8FAFC;
+            --text-main: #1E293B;
+            --text-sub: #64748B;
+        }
+
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            background-color: var(--bg-light); 
+            color: var(--text-main); 
+            line-height: 1.6; 
+            margin: 0; 
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        /* 头部设计 */
+        header { 
+            background: linear-gradient(135deg, var(--navy) 0%, #004a99 100%); 
+            color: white; 
+            padding: 80px 0 60px; 
+            text-align: center; 
+            border-bottom: 6px solid #fbbf24; /* 金色点缀 */
+        }
+        header img { 
+            width: 150px; height: 190px; 
+            border-radius: 12px; 
+            border: 4px solid rgba(255,255,255,0.2);
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+        }
+        header h1 { margin: 10px 0; font-size: 2.5em; letter-spacing: 2px; }
+        .header-sub { font-size: 1.2em; opacity: 0.9; font-weight: 300; margin-bottom: 20px; }
+        .contact-info { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; font-size: 0.9em; }
+        .contact-info span { display: flex; align-items: center; gap: 8px; }
+
+        /* 板块通用样式 */
+        section { background: white; padding: 35px; border-radius: 16px; margin-bottom: 30px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        h2 { 
+            color: var(--navy); 
+            border-left: 5px solid var(--tech-blue); 
+            padding-left: 15px; 
+            margin-top: 0; 
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* AI Exploration 特色版块 */
+        .ai-box { 
+            background: linear-gradient(to right, #eff6ff, #f8fafc);
+            border: 1px solid #dbeafe;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+        .ai-tag { 
+            background: var(--tech-blue); 
+            color: white; 
+            padding: 2px 10px; 
+            border-radius: 4px; 
+            font-size: 0.8em; 
+            text-transform: uppercase;
+        }
+
+        /* 经历列表样式 */
+        .exp-item { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #f1f5f9; }
+        .exp-item:last-child { border-bottom: none; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .company { font-weight: 700; color: var(--navy); font-size: 1.1em; }
+        .date { color: var(--text-sub); font-size: 0.9em; }
+        .job-title { color: var(--tech-blue); font-weight: 600; margin-bottom: 8px; display: block; }
+        ul { padding-left: 20px; margin: 10px 0; }
+        li { margin-bottom: 6px; font-size: 0.95em; }
+
+        /* 技能标签 */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #f1f5f9; color: var(--navy); padding: 6px 14px; border-radius: 8px; font-size: 0.9em; font-weight: 500; }
+
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8em; }
+            section { padding: 20px; }
+            .exp-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="profile.jpg" alt="Judy Wang">
+        <h1>王雪 Judy Wang</h1>
+        <p class="header-sub">金融会计 | 数据分析 | AI+金融复合型人才</p>
+        <div class="contact-info">
+            <span><i class="fas fa-phone"></i> 133-5471-7968</span>
+            <span><i class="fas fa-envelope"></i> judywang_11324@163.com</span>
+            <span><i class="fas fa-location-dot"></i> 杭州 / 珠海</span>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- 1. AI + Finance Exploration Section -->
+    <section>
+        <h2><i class="fas fa-brain"></i> AI & Data Exploration</h2>
+        <div class="ai-box">
+            <span class="ai-tag">Quantitative Modeling</span>
+            <p><strong>蒙特卡洛模型验证：</strong>在CFA大赛中，利用Python编写随机模拟算法，对伊利集团进行10,000次估值压力测试，将单一DCF模型的确定性预测转化为风险概率分布，展现了严谨的量化建模思维。</p>
+        </div>
+        <div class="ai-box" style="margin-top:15px;">
+            <span class="ai-tag">Automated Insight</span>
+            <p><strong>智能研报分发：</strong>在恒泰证券期间，通过数字化手段追踪“碳中和”行业动态，产出高价值投研报告。在同花顺平台获 2000+ 点赞，展现了捕捉非结构化数据并转化为投资洞察的能力。</p>
+        </div>
+    </section>
+
+    <!-- 2. Professional Experience -->
+    <section>
+        <h2><i class="fas fa-briefcase"></i> 工作与实习经历</h2>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">美国道富银行 (State Street)</span>
+                <span class="date">2023.11 - 至今</span>
+            </div>
+            <span class="job-title">基金会计 | 杭州</span>
+            <ul>
+                <li><strong>资产定价自动化：</strong> 负责股票、债券、期权等产品的中央定价，通过标准化逻辑确保多渠道数据比对的精准性。</li>
+                <li><strong>流程集成：</strong> 协同海外团队完成净值报告，主导新客户入驻时的定价逻辑系统化配置。</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">正略咨询</span>
+                <span class="date">2021.03 - 2021.05</span>
+            </div>
+            <span class="job-title">兼职咨询顾问 | 上海</span>
+            <ul>
+                <li><strong>量化调研：</strong> 独立设计并回收500份有效问卷，利用统计学方法分析高血压药物市场，产出20页深度行业报告。</li>
+                <li><strong>专家访谈与建模：</strong> 访谈行业专家，梳理龙头企业（恒瑞、华海）盈利模式，为销售策略提供数据支撑。</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">恒泰证券股份有限公司</span>
+                <span class="date">2021.07 - 2021.08</span>
+            </div>
+            <span class="job-title">营业部投研实习生 | 呼和浩特</span>
+            <ul>
+                <li><strong>市场舆情监控：</strong> 每日晨会分享市场动态，协助编辑财富管理公众号资讯。</li>
+                <li><strong>深度研报撰写：</strong> 独立撰写“碳中和”专题投资报告并在同花顺发布，获 2000+ 点赞量，展现极强的市场敏锐度。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 3. Key Projects & Competitions -->
+    <section>
+        <h2><i class="fas fa-trophy"></i> 核心奖项与项目</h2>
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">CFA 协会全球投资分析大赛</span>
+                <span class="date">2021.08 - 2022.04</span>
+            </div>
+            <p><strong>华南赛区季军 / 亚太赛区优秀奖</strong></p>
+            <ul>
+                <li>运用 DCF、PE 模型进行企业估值，并创新引入蒙特卡洛模型进行风险验证。</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="company">香港注册会计师 QP 案例大赛</span>
+                <span class="date">2020.05 - 2020.08</span>
+            </div>
+            <p><strong>全国前二十强 / 优秀参与奖</strong></p>
+            <ul>
+                <li>运用 SWOT、Value Chain 模型解决连锁餐饮疫情期间的供应与扩张问题，产出商业运营报告。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 4. Education & Skills -->
+    <section>
+        <h2><i class="fas fa-graduation-cap"></i> 教育与技能</h2>
+        <p><strong>北京师范大学-香港浸会大学联合国际学院 (UIC)</strong> | 会计学本科 | GPA 3.6 (前15%)</p>
+        <div class="skills-container">
+            <div class="skill-tag">Python (GPA 4.0)</div>
+            <div class="skill-tag">Excel Master (MOS认证)</div>
+            <div class="skill-tag">SQL</div>
+            <div class="skill-tag">Java</div>
+            <div class="skill-tag">英语 (IELTS 6.5)</div>
+            <div class="skill-tag">法语 (TCF A1)</div>
+            <div class="skill-tag">Financial Modeling</div>
+        </div>
+    </section>
+
+</div>
+
+<footer style="text-align: center; padding: 40px; color: #94a3b8; font-size: 0.8em;">
+    <p>&copy; 2024 Judy Wang. Built with Data & Finance Expertise.</p>
+</footer>
+
+</body>
+</html>
